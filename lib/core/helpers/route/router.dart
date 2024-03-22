@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'routes_name.dart';
+
 import '../../../module/home/presentation/view/home_screen.dart';
+import 'routes_name.dart';
 
 /// Mixin for handling app routing.
 mixin AppRouter {

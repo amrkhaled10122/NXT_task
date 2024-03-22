@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import '../../service/local/preference_manager.dart';
 
 /// A class that provides theme-related functionality and manages the app's theme state.

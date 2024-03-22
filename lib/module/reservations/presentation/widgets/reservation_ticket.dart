@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_task_nxt/module/reservations/data/models/user_ticket.dart';
+import '../../data/models/user_ticket.dart';
 import '../../../../core/component/dashed_line.dart';
 import '../../../../core/helpers/extension/context_extension.dart';
 import '../../../../core/helpers/extension/size_extension_box.dart';

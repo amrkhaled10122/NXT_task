@@ -1,4 +1,4 @@
-import 'package:flutter_task_nxt/module/reservations/data/models/ticket_user_data.dart';
+import 'ticket_user_data.dart';
 
 /// Represents a user's ticket information.
 class UserTicket {

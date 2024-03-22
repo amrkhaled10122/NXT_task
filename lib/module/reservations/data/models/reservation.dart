@@ -1,4 +1,4 @@
-import 'package:flutter_task_nxt/module/reservations/data/models/user_ticket.dart';
+import 'user_ticket.dart';
 
 import 'Stay.dart';
 
