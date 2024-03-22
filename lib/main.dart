@@ -19,7 +19,7 @@ void main() async {
   // Initialize Flutter and essential services
   WidgetsFlutterBinding.ensureInitialized();
   ApiService.instance.initializeDio();
-  PreferencesManager.setupSharedPreferences();
+  await PreferencesManager.setupSharedPreferences();
 
   runApp(const MyApp());
 }

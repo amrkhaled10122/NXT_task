@@ -1,5 +1,5 @@
 import '../models/reservation.dart';
-import '../sources/reservation_data_provider.dart';
+import '../sources/reservation_data_source.dart';
 import '../../domain/repositories/reservation_repository.dart';
 
 class ReservationRepositoryImpl implements ReservationRepository {

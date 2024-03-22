@@ -36,11 +36,6 @@ class PreferencesManager {
     return sharedPreferences?.getBool(key) ?? false;
   }
 
-  /// Retrieves a boolean value from SharedPreferences with the given key.
-  static bool getBoolWithKey2(String key) {
-    return sharedPreferences?.getBool(key) ?? false;
-  }
-
   /// Retrieves a string value from SharedPreferences with the given key.
   static String? getStringWithKey(String key) {
     return sharedPreferences?.getString(key);
