@@ -9,7 +9,7 @@ version: 1.0.0+1
 
 # Specifies the Dart SDK version compatibility for your project
 environment:
-  sdk: '>=3.1.2 <4.0.0'
+  sdk: '>=3.2.4 <4.0.0'
 
 # Dependencies required by your project
 dependencies:
@@ -21,8 +21,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   # responsive UI 
   flutter_screenutil: ^5.9.0
-  # Google Fonts in your application
-  google_fonts: ^6.1.0
+ 
   # persistent store for simple data types
   shared_preferences: ^2.2.2
   # loading indicator
@@ -38,9 +37,7 @@ dependencies:
   # load and cache network images
   cached_network_image: ^3.3.0
   # custom bottom sheets
-  bottom_sheet: ^4.0.0
-  # toast messages
-  fluttertoast: ^8.2.2
+  modal_bottom_sheet: ^3.0.0 
   #Localization
   flutter_localizations:
     sdk: flutter

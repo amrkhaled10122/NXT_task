@@ -10,22 +10,10 @@ class HotelLocation extends StatelessWidget {
   final String hotelName;
   final String address;
   const HotelLocation({
-    Key? key,
+    super.key,
     required this.hotelName,
     required this.address,
-  }) : super(key: key);
-
-  Widget _buildMap() {
-    return Stack(
-      children: [
-        Assets.images.map.image(
-          height: 110.h,
-          width: 100.w,
-          fit: BoxFit.fill,
-        ),
-      ],
-    );
-  }
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +39,7 @@ class HotelLocation extends StatelessWidget {
                       Text(
                         "$hotelName ${context.localization.hotel}",
                         style: Theme.of(context).primaryTextTheme.labelSmall!.copyWith(
-                              color: Theme.of(context).indicatorColor,
+                              color: Theme.of(context).hintColor,
                             ),
                       ),
                       12.heightBox,
@@ -61,7 +49,7 @@ class HotelLocation extends StatelessWidget {
                         maxLines: 2,
                         address,
                         style: Theme.of(context).primaryTextTheme.labelSmall!.copyWith(
-                              color: Theme.of(context).indicatorColor,
+                              color: Theme.of(context).hintColor,
                               height: 1.4,
                             ),
                       ),
@@ -72,6 +60,18 @@ class HotelLocation extends StatelessWidget {
               Flexible(flex: 2, child: _buildMap())
             ],
           ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMap() {
+    return Stack(
+      children: [
+        Assets.images.map.image(
+          height: 110.h,
+          width: 100.w,
+          fit: BoxFit.fill,
         ),
       ],
     );

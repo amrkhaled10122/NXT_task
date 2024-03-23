@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -21,23 +19,5 @@ class EasyLoadingHelpers {
     EasyLoading.instance.textStyle = textStyle;
     EasyLoading.instance.textColor = primaryColor;
     EasyLoading.instance.dismissOnTap = true;
-  }
-}
-
-/// A helper class for showing informative toasts.
-class InfoHelper {
-  static void showToast({
-    required String message,
-    Color backgroundColor = Colors.red,
-  }) {
-    Fluttertoast.showToast(
-      msg: message,
-      toastLength: Toast.LENGTH_SHORT,
-      gravity: ToastGravity.CENTER,
-      timeInSecForIosWeb: 1,
-      backgroundColor: backgroundColor,
-      textColor: Colors.white,
-      fontSize: 16.0.sp,
-    );
   }
 }

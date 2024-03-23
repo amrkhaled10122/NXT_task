@@ -2,27 +2,72 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../data/models/guest.dart';
+import '../../data/models/room.dart';
 
 import '../../../../core/component/dashed_line.dart';
 import '../../../../core/helpers/extension/context_extension.dart';
 import '../../../../core/helpers/extension/size_extension_box.dart';
-import '../../data/models/Guest.dart';
-import '../../data/models/room.dart';
 
 class RoomReservation extends StatelessWidget {
   final Room room;
   final int roomNumber;
-  const RoomReservation({Key? key, required this.room, required this.roomNumber}) : super(key: key);
+  const RoomReservation({super.key, required this.room, required this.roomNumber});
 
-  Widget _buildGuestCard({
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          "${context.localization.roomReservation} 0$roomNumber",
+          style: Theme.of(context).primaryTextTheme.titleLarge,
+        ),
+        35.heightBox,
+        Text(
+          "${context.localization.guest}:",
+          style: Theme.of(context).primaryTextTheme.titleLarge,
+        ),
+        10.heightBox,
+        ListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: room.guests.length,
+          itemBuilder: (BuildContext context, int index) {
+            return _buildGuestCardWidget(context: context, guest: room.guests[index]);
+          },
+        ),
+        35.heightBox,
+        Text(
+          context.localization.roomType,
+          style: Theme.of(context).primaryTextTheme.titleLarge,
+        ),
+        5.heightBox,
+        Text(
+          room.roomTypeName,
+          style: Theme.of(context).primaryTextTheme.displaySmall!.copyWith(
+                color: Theme.of(context).hintColor,
+              ),
+        ),
+        35.heightBox,
+        _buildRoomNumberWidget(context),
+        40.heightBox,
+        DashedLine(
+          color: Theme.of(context).dividerColor,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildGuestCardWidget({
     required BuildContext context,
-    required Guest gust,
+    required Guest guest,
   }) {
     return Row(
       children: [
         ClipOval(
           child: CachedNetworkImage(
-            imageUrl: gust.avatar,
+            imageUrl: guest.avatar,
             width: 30.w,
             height: 30.h,
             fit: BoxFit.cover,
@@ -30,7 +75,7 @@ class RoomReservation extends StatelessWidget {
         ),
         6.widthBox,
         Text(
-          "${gust.firstName} ${gust.lastName}",
+          "${guest.firstName} ${guest.lastName}",
           style: Theme.of(context).primaryTextTheme.titleSmall!.copyWith(
                 color: Theme.of(context).hintColor,
               ),
@@ -39,7 +84,7 @@ class RoomReservation extends StatelessWidget {
     );
   }
 
-  Widget _buildRoomNumber(BuildContext context) {
+  Widget _buildRoomNumberWidget(BuildContext context) {
     return Row(
       children: [
         Expanded(
@@ -79,51 +124,6 @@ class RoomReservation extends StatelessWidget {
             ],
           ),
         )
-      ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          "${context.localization.roomReservation} 0$roomNumber",
-          style: Theme.of(context).primaryTextTheme.titleLarge,
-        ),
-        35.heightBox,
-        Text(
-          "${context.localization.guest}:",
-          style: Theme.of(context).primaryTextTheme.titleLarge,
-        ),
-        10.heightBox,
-        ListView.builder(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: room.guests.length,
-          itemBuilder: (BuildContext context, int index) {
-            return _buildGuestCard(context: context, gust: room.guests[index]);
-          },
-        ),
-        35.heightBox,
-        Text(
-          context.localization.roomType,
-          style: Theme.of(context).primaryTextTheme.titleLarge,
-        ),
-        5.heightBox,
-        Text(
-          room.roomTypeName,
-          style: Theme.of(context).primaryTextTheme.displaySmall!.copyWith(
-                color: Theme.of(context).hintColor,
-              ),
-        ),
-        35.heightBox,
-        _buildRoomNumber(context),
-        40.heightBox,
-        DashedLine(
-          color: Theme.of(context).dividerColor,
-        ),
       ],
     );
   }

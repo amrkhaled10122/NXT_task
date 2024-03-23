@@ -68,6 +68,9 @@ class AppTheme {
           backgroundColor: appColors.navBarColor,
         ),
         indicatorColor: appColors.indicatorColor,
+        textTheme: TextTheme(
+          titleMedium: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: appColors.textOnBackGround),
+        ),
         primaryTextTheme: const TextTheme(
           displaySmall: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
           labelSmall: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),

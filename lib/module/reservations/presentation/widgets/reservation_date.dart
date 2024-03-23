@@ -8,10 +8,10 @@ class ReservationDate extends StatelessWidget {
   final String startDate;
   final String endDate;
   const ReservationDate({
-    Key? key,
+    super.key,
     required this.startDate,
     required this.endDate,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,5 @@
+import 'stay.dart';
 import 'user_ticket.dart';
-
-import 'Stay.dart';
 
 class Reservation {
   String endDate;

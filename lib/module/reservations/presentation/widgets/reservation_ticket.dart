@@ -8,37 +8,7 @@ import '../../../../core/helpers/extension/size_extension_box.dart';
 
 class ReservationTicket extends StatelessWidget {
   final UserTicket userTicket;
-  const ReservationTicket({Key? key, required this.userTicket}) : super(key: key);
-
-  Widget _buildLine() {
-    return Row(
-      children: [
-        Container(
-          width: 10.w,
-          height: 18.w,
-          decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(12.r),
-              bottomRight: Radius.circular(12.r),
-            ),
-          ),
-        ),
-        const Expanded(child: DashedLine()),
-        Container(
-          width: 10.w,
-          height: 18.w,
-          decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(12.r),
-              bottomLeft: Radius.circular(12.r),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
+  const ReservationTicket({super.key, required this.userTicket});
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +58,7 @@ class ReservationTicket extends StatelessWidget {
               ),
             ],
           ),
-          _buildLine(),
+          _buildLineWidget(),
           Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 14.w,
@@ -129,6 +99,36 @@ class ReservationTicket extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+
+  Widget _buildLineWidget() {
+    return Row(
+      children: [
+        Container(
+          width: 10.w,
+          height: 18.w,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(12.r),
+              bottomRight: Radius.circular(12.r),
+            ),
+          ),
+        ),
+        const Expanded(child: DashedLine()),
+        Container(
+          width: 10.w,
+          height: 18.w,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(12.r),
+              bottomLeft: Radius.circular(12.r),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

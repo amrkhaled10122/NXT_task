@@ -21,7 +21,6 @@ class ScreenInit extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(designWidth, designHeight),
-      useInheritedMediaQuery: true,
       builder: builder,
     );
   }

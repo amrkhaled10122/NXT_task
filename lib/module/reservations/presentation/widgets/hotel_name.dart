@@ -5,7 +5,7 @@ import '../../../../core/helpers/extension/size_extension_box.dart';
 
 class HotelName extends StatelessWidget {
   final String hotelName;
-  const HotelName({Key? key, required this.hotelName}) : super(key: key);
+  const HotelName({super.key, required this.hotelName});
 
   @override
   Widget build(BuildContext context) {

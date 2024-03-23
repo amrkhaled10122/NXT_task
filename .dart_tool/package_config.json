@@ -38,18 +38,6 @@
       "languageVersion": "2.17"
     },
     {
-      "name": "bottom_inset_observer",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/bottom_inset_observer-3.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
-      "name": "bottom_sheet",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/bottom_sheet-4.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
       "name": "build",
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/build-2.4.1",
       "packageUri": "lib/",
@@ -195,9 +183,9 @@
     },
     {
       "name": "ffi",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/ffi-2.1.0",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/ffi-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "file",
@@ -284,12 +272,6 @@
       "languageVersion": "3.2"
     },
     {
-      "name": "fluttertoast",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/fluttertoast-8.2.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "frontend_server_client",
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0",
       "packageUri": "lib/",
@@ -302,12 +284,6 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "google_fonts",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/google_fonts-6.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "graphs",
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/graphs-2.3.1",
       "packageUri": "lib/",
@@ -315,9 +291,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/http-1.2.0",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/http-1.2.1",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "http_multi_server",
@@ -362,6 +338,24 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "leak_tracker",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "leak_tracker_flutter_testing",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "leak_tracker_testing",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/lints-3.0.0",
       "packageUri": "lib/",
@@ -381,7 +375,7 @@
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/material_color_utilities-0.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -396,6 +390,12 @@
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/mime-1.0.5",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "modal_bottom_sheet",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/modal_bottom_sheet-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "nested",
@@ -543,9 +543,9 @@
     },
     {
       "name": "shared_preferences_web",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.2",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/shared_preferences_web-2.3.0",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "shared_preferences_windows",
@@ -591,9 +591,9 @@
     },
     {
       "name": "sqflite_common",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/sqflite_common-2.5.3",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/sqflite_common-2.5.4",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "stack_trace",
@@ -633,7 +633,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/test_api-0.7.0",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/test_api-0.6.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -668,6 +668,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "vm_service",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "watcher",
       "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/watcher-1.1.0",
       "packageUri": "lib/",
@@ -675,21 +681,21 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/web-0.4.2",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/web-0.5.1",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "web_socket_channel",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.3",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.4",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/win32-5.2.0",
+      "rootUri": "file:///Users/amrkhaled/.pub-cache/hosted/pub.dev/win32-5.3.0",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "xdg_directories",
@@ -713,10 +719,10 @@
       "name": "flutter_task_nxt",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-03-22T20:52:22.589073Z",
+  "generated": "2024-03-23T06:43:50.514805Z",
   "generator": "pub",
-  "generatorVersion": "3.2.4"
+  "generatorVersion": "3.3.2"
 }
